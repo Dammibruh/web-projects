@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script> 
+ </head> 
+ <body> 
+  <h1> </h1> 
+  <div class="calc"> 
+   <div class="main" id="main">
+     {{current || '0'}} 
+   </div> 
+   <div class="btn" id="inpt" onclick="main.current = '';">
+     C 
+   </div> 
+   <div class="btn" id="inpt" onclick="bracket()">
+     () 
+   </div> 
+   <div class="btn" id="inpt" onclick="del_el()">
+     CE 
+   </div> 
+   <div class="btn op" id="inpt" onclick="add('/')">
+     / 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('7')">
+     7 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('8')">
+     8 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('9')">
+     9 
+   </div> 
+   <div class="btn op" id="inpt" onclick="add('*')">
+     x 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('4')">
+     4 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('5')">
+     5 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('6')">
+     6 
+   </div> 
+   <div class="btn op" id="inpt" onclick="add('-')">
+     - 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('1')">
+     1 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('2')">
+     2 
+   </div> 
+   <div class="btn" id="inpt" onclick="add('3')">
+     3 
+   </div> 
+   <div class="btn op" id="inpt" onclick="add('+')">
+     + 
+   </div> 
+   <div class="btn zero" id="inpt" onclick="add('0')">
+     0 
+   </div> 
+   <div class="btn" id="inpt" onclick="point()">
+     . 
+   </div> 
+   <div class="btn op" id="inpt" onclick="output()">
+     = 
+   </div> 
+  </div> 
+ </body>
+</html>
